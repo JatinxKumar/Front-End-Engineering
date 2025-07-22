@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>Personal Information</h1></legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" pattern="[A-Za-z]{3,}" title="Only letters, minimum 3 characters" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Enter your email" title="Enter a valid email address">
+            <br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="15" max="80" required placeholder="Enter Age" title="Age must be between 15 and 80">
+            <br><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone" pattern="\d{10}" title="Enter 10 digit phone number" placeholder="Enter 10 digit phone number" required>
+            <br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required placeholder="Enter your password" title="Password is required">
+            <br><br>
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm your password" title="Please confirm your password">
+            <br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+            <label>Language:</label><br>    
+            <input type="checkbox" id="English" name="Language" value="English" required>
+            <label for="English">English</label>
+            <input type="checkbox" id="Hindi" name="Language" value="Hindi" required>
+            <label for="Hindi">Hindi</label>
+            <input type="checkbox" id="Punjabi" name="Language" value="Punjabi" required>
+            <label for="Punjabi">Punjabi</label>
+            <input type="checkbox" id="Tamil" name="Language" value="Tamil" required>
+            <label for="Tamil">Tamil</label>
+            <br><br>
+        <div align="center">
+            <input type="submit" value="Submit">
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>
