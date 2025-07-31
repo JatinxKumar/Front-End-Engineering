@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Blog</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="blogPage.css">
+
+</head>
+
+<body>
+    <div class="head">
+        <h1>WanderNest</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogPage.html">Blog</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h2>Welcome to My Travel Blog</h2>
+    <div class="welcome">
+        <p>
+            Join me as I explore breathtaking destinations, discover hidden gems, and share unforgettable travel
+            experiences
+            from around the world. Whether you're a seasoned traveler or planning your first adventure, WanderNest is
+            your
+            guide to inspiration and practical tips.
+        </p>
+        <img src="temp/mountains.png" alt="Majestic mountain landscape" width="350">
+    </div>
+
+
+    <h2>Top 3 Travel Destinations: </h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Destination</th>
+            <th>Country</th>
+            <th>Best Time to Visit</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+            <td>Kyoto</td>
+            <td>Japan</td>
+            <td>March - May, October - November</td>
+            <td>Japanese</td>
+        </tr>
+        <tr>
+            <td>Paris</td>
+            <td>France</td>
+            <td>April - June, September - November</td>
+            <td>French</td>
+        </tr>
+        <tr>
+            <td>Cape Town</td>
+            <td>South Africa</td>
+            <td>November - March</td>
+            <td>English, Afrikaans</td>
+        </tr>
+    </table>
+
+    <h2 style="margin-top: 30px;">Favourite Quote:</h2>
+    <blockquote cite="https://www.anthonybourdain.net/">
+        "Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts, it even breaks your heart. But
+        that’s okay. The journey changes you; it should change you."
+        <br>
+        <cite>— Anthony Bourdain</cite>
+    </blockquote>
+
+    <h2 style="margin-bottom: 30px;">Watch My Latest Trip Video</h2>
+    <video width="480" controls>
+        <source src="temp/generate_an_video_of_monkey_vl.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio src="bgmusic.mp3" loop autoplay muted></audio>
+
+    <h2>Share Your Travel Interests</h2>
+    <form action="#" method="post" class="travel-form">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="destination">Destination Interest:</label>
+        <select id="destination" name="destination" required>
+            <option value="">--Select--</option>
+            <option value="kyoto">Kyoto</option>
+            <option value="paris">Paris</option>
+            <option value="cape_town">Cape Town</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <span>Type of Traveler:</span><br>
+        <input type="checkbox" id="adventure" name="traveler_type" value="adventure">
+        <label for="adventure">Adventure</label><br>
+        <input type="checkbox" id="leisure" name="traveler_type" value="leisure">
+        <label for="leisure">Leisure</label><br>
+        <input type="checkbox" id="culture" name="traveler_type" value="culture">
+        <label for="culture">Culture</label><br>
+        <input type="checkbox" id="nature" name="traveler_type" value="nature">
+        <label for="nature">Nature</label><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
