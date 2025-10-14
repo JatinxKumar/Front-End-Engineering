@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Welcome to my Website</h2>
+    <button onclick="handleContent()">load content</button>
+    <div id="container"></div>
+
+    <script>
+      function handleContent() {
+        let req = new XMLHttpRequest();
+        req.open("GET", "about.html");
+        req.onreadystatechange = function () {
+          if (req.readyState === 4 && req.status === 200) {
+            document.getElementById("container").innerHTML = req.responseText;
+          }
+        };
+        req.send();
+      }
+    </script>
+  </body>
+</html>
